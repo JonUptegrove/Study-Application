@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Study App</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="study.html">Study Mode</a>
+        <a href="my-study-sets.html">My Study Sets</a>
+
+        <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+    </nav>
+</header>
+
+<main>
+
+    <section class="welcome-section">
+        <h2>Welcome to Study App</h2>
+        <p>Turn your class notes into flashcards and study smarter.</p>
+    </section>
+
+    <section class="upload-section">
+        <h2>Create a Study Set</h2>
+
+        <p>Give your study set a name.</p>
+
+        <input
+                type="text"
+                id="studySetName"
+                placeholder="Example: Biology Chapter 4"
+        >
+
+        <p>Upload your notes to generate flashcards.</p>
+
+        <input type="file" id="notesFile" accept=".pdf,.txt">
+
+        <button id="uploadButton">Upload Notes</button>
+    </section>
+    <section class="extracted-text-section">
+
+        <h2>Extracted Notes</h2>
+
+        <p>Text extracted from your uploaded document will appear here.</p>
+
+        <div id="extractedText">
+            No notes uploaded yet.
+        </div>
+        <button id="generateButton">Generate Flashcards</button>
+    </section>
+
+</main>
+
+<script src="theme.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

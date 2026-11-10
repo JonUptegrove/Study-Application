@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Mode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>StudyApp</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="study.html">Study Mode</a>
+        <a href="my-study-sets.html">My Study Sets</a>
+
+        <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Study Mode</h2>
+
+    <div id="studyMode">
+
+        <p id="cardProgress">Card 0 of 0</p>
+
+        <div id="currentFlashcard">
+            Your flashcards will appear here.
+        </div>
+        <div class="studyButtons">
+
+            <button id="previousButton">Previous Card</button>
+
+            <button id="revealButton">Flip Card</button>
+
+            <button id="nextButton">Next Card</button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="theme.js"></script>
+<script src="study.js"></script>
+
+</body>
+</html>
